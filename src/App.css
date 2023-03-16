@@ -118,6 +118,12 @@ input[type="radio"]:is(:hover, :focus, :active) {
 
 }
 
+.output {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
 .pricing {
   font-size: var(--fontsize-400);
   display: flex;
@@ -127,7 +133,7 @@ input[type="radio"]:is(:hover, :focus, :active) {
   color: var(--clr-primary-400);
   font-size: var(--fontsize-600);
   border: 1px solid var(--clr-primary-100);
-  padding-block: var(--space-400);
+  padding: var(--space-400);
   border-radius: var(--br-400);
 
 }
