@@ -144,87 +144,90 @@ function App() {
   return (
     <>
       <div className="app">
-        <section className="info">
-          <h2>Podaci</h2>
-          {data.snageMotora && (
-            <SelectEngine
-              data={data.snageMotora}
-              kw={kw}
-              onCoefEngineSelect={handleCoefEngineSelect}
-            />
-          )}
-          <br />
-          {data.dobOsiguranika && (
-            <SelectAge
-              data={data.dobOsiguranika}
-              onCoefAgeSelect={handleCoefAgeSelect}
-            />
-          )}
-          {data.regOznake && (
-            <SelectRegistration
-              data={data.regOznake}
-              onCoefRegistrationSelect={handleCoefRegistrationSelect}
-            />
-          )}
-          <br />
-          {data.premijskiStupnjevi && (
-            <SelectBonus
-              data={data.premijskiStupnjevi}
-              onBonusSelect={handleBonusSelect}
-            />
-          )}
-        </section>
-
-        <section className="discounts">
-          <h2>Popusti</h2>
-          <CashDiscountToggle
-            cashDiscount={cashDiscount}
-            onCashDiscountToggle={handleCashDiscountToggle}
-          />
-          <SafeDriverDiscountToggle
-            safeDriverDiscount={safeDriverDiscount}
-            onSafeDriverDiscountToggle={handleSafeDriverDiscount}
-          />
-          <br />
-          <BudgetDiscount onBudgetDiscountChange={handleBudgetDiscountChange} />
-          <br />
-          <AdditionalDiscount
-            onAdditionalDiscountChange={handleAdditionalDiscountChange}
-          />
-          <br />
-          <SpecialDiscount
-            onSpecialDiscountSelect={handleSpecialDiscountSelect}
-          />
-        </section>
-        <section className="coverage">
-          <h2>Paketi</h2>
-          <AdditionalCoverage
-            onAdditionalCoverageChange={handleAdditionalCoverageChange}
-          />
-          <br />
-          <KaskoCoverage1
-            data={data.djelomicniKasko}
-            onKaskoCoverage1Change={handleKaskoCoverage1Change}
-          />
-          <br />
-          <KaskoCoverage2
-            data={data.djelomicniKasko}
-            onKaskoCoverage2Change={handleKaskoCoverage2Change}
-          />
-        </section>
-        <section className="pricing">
-          {/* <p>
-            Cijena bez popusta: <br />
-            {`${basePrice.toFixed(2)}HRK || ${(basePrice / 7.5345).toFixed(2)}EUR `}
+        <div className="inputs">
+          <section className="info">
+            <h2>Podaci</h2>
+            {data.snageMotora && (
+              <SelectEngine
+                data={data.snageMotora}
+                kw={kw}
+                onCoefEngineSelect={handleCoefEngineSelect}
+              />
+            )}
             <br />
+            {data.dobOsiguranika && (
+              <SelectAge
+                data={data.dobOsiguranika}
+                onCoefAgeSelect={handleCoefAgeSelect}
+              />
+            )}
+            {data.regOznake && (
+              <SelectRegistration
+                data={data.regOznake}
+                onCoefRegistrationSelect={handleCoefRegistrationSelect}
+              />
+            )}
             <br />
-            Cijena sa popustima: <br />
-            {`${discountedPrice.toFixed(2)}HRK || ${(discountedPrice / 7.5345).toFixed(2)}EUR `}
-          </p> */}
-          Iznos za naplatu: <br />
-          <span className="hrk">{`${finalPrice.toFixed(2)}HRK`}</span>
-          <span className="eur">{`${(finalPrice / 7.5345).toFixed(2)}EUR `}</span>
-        </section>
+            {data.premijskiStupnjevi && (
+              <SelectBonus
+                data={data.premijskiStupnjevi}
+                onBonusSelect={handleBonusSelect}
+              />
+            )}
+          </section>
+          <section className="discounts">
+            <h2>Popusti</h2>
+            <CashDiscountToggle
+              cashDiscount={cashDiscount}
+              onCashDiscountToggle={handleCashDiscountToggle}
+            />
+            <SafeDriverDiscountToggle
+              safeDriverDiscount={safeDriverDiscount}
+              onSafeDriverDiscountToggle={handleSafeDriverDiscount}
+            />
+            <br />
+            <BudgetDiscount onBudgetDiscountChange={handleBudgetDiscountChange} />
+            <br />
+            <AdditionalDiscount
+              onAdditionalDiscountChange={handleAdditionalDiscountChange}
+            />
+            <br />
+            <SpecialDiscount
+              onSpecialDiscountSelect={handleSpecialDiscountSelect}
+            />
+          </section>
+          <section className="coverage">
+            <h2>Paketi</h2>
+            <AdditionalCoverage
+              onAdditionalCoverageChange={handleAdditionalCoverageChange}
+            />
+            <br />
+            <KaskoCoverage1
+              data={data.djelomicniKasko}
+              onKaskoCoverage1Change={handleKaskoCoverage1Change}
+            />
+            <br />
+            <KaskoCoverage2
+              data={data.djelomicniKasko}
+              onKaskoCoverage2Change={handleKaskoCoverage2Change}
+            />
+          </section>
+        </div>
+        <div className="output">
+          <section className="pricing">
+            {/* <p>
+              Cijena bez popusta: <br />
+              {`${basePrice.toFixed(2)}HRK || ${(basePrice / 7.5345).toFixed(2)}EUR `}
+              <br />
+              <br />
+              Cijena sa popustima: <br />
+              {`${discountedPrice.toFixed(2)}HRK || ${(discountedPrice / 7.5345).toFixed(2)}EUR `}
+            </p> */}
+            Iznos za naplatu: <br />
+            <span className="hrk">{`${finalPrice.toFixed(2)}HRK`}</span>
+            <span className="eur">{`${(finalPrice / 7.5345).toFixed(2)}EUR `}</span>
+          </section>
+        </div>
       </div>
       <footer>
         <a href="https://ivansam.com">Made by Ivan Samardžija</a>
