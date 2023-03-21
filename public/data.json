@@ -56,15 +56,15 @@
   ],
   "premijskiStupnjevi": [
     { "premijskiStupanj": "1 (bonus 50%)", "koeficijent": 0.5 },
-    { "premijskiStupanj": "2 (bonus 45%)", "koeficijent": 0.45 },
-    { "premijskiStupanj": "3 (bonus 40%)", "koeficijent": 0.4 },
-    { "premijskiStupanj": "4 (bonus 35%)", "koeficijent": 0.35 },
-    { "premijskiStupanj": "5 (bonus 30%)", "koeficijent": 0.3 },
-    { "premijskiStupanj": "6 (bonus 25%)", "koeficijent": 0.25 },
-    { "premijskiStupanj": "7 (bonus 20%)", "koeficijent": 0.2 },
-    { "premijskiStupanj": "8 (bonus 15%)", "koeficijent": 0.15 },
-    { "premijskiStupanj": "9 (bonus 10%)", "koeficijent": 0.1 },
-    { "premijskiStupanj": "10 (bonus 0%)", "koeficijent": 0 }
+    { "premijskiStupanj": "2 (bonus 45%)", "koeficijent": 0.55 },
+    { "premijskiStupanj": "3 (bonus 40%)", "koeficijent": 0.6 },
+    { "premijskiStupanj": "4 (bonus 35%)", "koeficijent": 0.65 },
+    { "premijskiStupanj": "5 (bonus 30%)", "koeficijent": 0.7 },
+    { "premijskiStupanj": "6 (bonus 25%)", "koeficijent": 0.75 },
+    { "premijskiStupanj": "7 (bonus 20%)", "koeficijent": 0.8 },
+    { "premijskiStupanj": "8 (bonus 15%)", "koeficijent": 0.85 },
+    { "premijskiStupanj": "9 (bonus 10%)", "koeficijent": 0.9 },
+    { "premijskiStupanj": "10 (bonus 0%)", "koeficijent": 1 }
   ],
   "djelomicniKasko": [
     { "id": "s1", "paket": "STAKLA (2.000KN)", "cijena": 350 },
