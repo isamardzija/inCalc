@@ -72,6 +72,7 @@ function App() {
     additionalCoverage,
     kaskoCoverage1,
     kaskoCoverage2,
+    
   ]);
 
   const handleCoefEngineSelect = (e) => {
